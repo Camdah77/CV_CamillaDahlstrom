@@ -106,7 +106,7 @@ header {
 .name {
     font-family: "Exo", sans-serif;
     font-weight: 100;
-    font-size: 46px;
+    font-size: 36px;
     margin-top: 50px;
     color: #fff;
 }
@@ -114,7 +114,7 @@ header {
 .title {
     font-family: "Roboto", sans-serif;
     font-weight: 200;
-    font-size: 28px;
+    font-size: 18px;
     margin-top: 20px;
     margin-bottom: 90px;
     color: #fff;
@@ -271,4 +271,96 @@ footer {
 .personal-info-item .value {
     position: relative;
     width: 60%;
+}
+
+/* ----------------------------------------Skills */
+
+.progress {
+    position: relative;
+    height: 25px;
+    margin-bottom: 4px;
+}
+
+.progress-type {
+    position: absolute;
+    left: 0px;
+    font-weight: 400;
+    padding: 3px 30px 2px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+}
+
+.progress-section {
+    margin: 40px 20px;
+}
+.progress1{
+    background-color: #64A0A0;
+}
+.progress2{
+    background-color: #F699CD;
+}
+.progress3{
+    background-color: #567799;
+}
+.progress4{
+    background-color: #bb307f;
+}
+.progress5{
+    background-color: #525252;
+}
+/* ----------------------------------------Work History */
+.bg-color-work-history {
+    background-color: #64A0A0;
+}
+
+.history-heading {
+    color: #fafafa;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item h4 {
+    font-size: 14px;
+}
+
+.timeline-item p {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #fafafa;
+}
+
+.history-items {
+    margin-bottom: 30px;
 }
