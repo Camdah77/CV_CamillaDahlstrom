@@ -2,9 +2,8 @@ This page is Live here:
 https://camdah77.github.io/CV_CamillaDahlstrom/
 
 
+python3 -m http.server python3 app.py
 
-
-![Camilla Dahlström](assets/images/Camillada.webp)
 
 Welcome,
 

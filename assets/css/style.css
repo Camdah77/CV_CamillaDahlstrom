@@ -11,17 +11,23 @@
 }
 
 .ui-menu-color-home {
-    background-color: #F699CD;
-}
-
-.ui-menu-color-resume {
     background-color: #64A0A0;
 }
 
-.ui-menu-color-contact {
-    background-color: #567799;
+.ui-menu-color-resume {
+    background-color: #c7ea46;
 }
 
+.ui-menu-color-contact {
+    background-color: #F699CD;
+}
+
+.ui-menu-color-interests{
+    background-color:  hsl(61, 79%, 58%);
+}
+.ui-menu-color-github{
+    background-color: #567799;
+}
 .ui-menu-color-download {
     background-color: #525252;
 }
@@ -392,6 +398,13 @@ button[type="submit"] {
     background-color: #F699CD;
 }
 
+/* ----------------------------------------MAP  */
+div#map {min-height: 360px;}
+
+/* ----------------------------------------404  */
+
+
+
 /* ----------------------------------------Media Queries */
 
 @media(min-width: 992px) {
@@ -402,3 +415,4 @@ button[type="submit"] {
         max-width: 50%;
     }
 }
+
