@@ -15,21 +15,21 @@
 }
 
 .ui-menu-color-resume {
-    background-color: #c7ea46;
-}
-
-.ui-menu-color-contact {
     background-color: #F699CD;
 }
 
+.ui-menu-color-contact {
+    background-color: #476d6d;
+}
+
 .ui-menu-color-interests{
-    background-color:  hsl(61, 79%, 58%);
+    background-color:  #c96da1;
 }
 .ui-menu-color-github{
-    background-color: #567799;
+    background-color: #6a9999;
 }
 .ui-menu-color-download {
-    background-color: #525252;
+    background-color: #c091ab;
 }
 
 .row-table {
@@ -103,9 +103,10 @@ header {
 
 .logo {
     background: url("../images/Camillada.webp");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 310px;
+    min-height: 319px;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -128,21 +129,12 @@ header {
     color: #fff;
 }
 
-.list-inline-item:not(:last-child) {
+#nav {
     margin: 0;
-}
-
-.menucontainer {
-    font-size: 0;
 }
 
 #nav li {
-    font-size: 14px;
     padding: 0;
-}
-
-#nav {
-    margin: 0;
 }
 
 .menuitem {
@@ -154,9 +146,10 @@ header {
 .menuitem a {
     width: 100%;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     height: 120px;
 }
+
 
 .menuitem a i {
     padding-top: 22px;
