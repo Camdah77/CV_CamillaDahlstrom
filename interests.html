@@ -171,26 +171,45 @@
                             <span class="sr-only">Instagram</span>
                         </a>
                     </li>
-               </ul>
+                </ul>
             </div>
         </div>
-    </footer>
-    <script>
-        function initMap(){
+       
+   <script>
+    function initMap(){
             var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 3,
+                zoom: 12,
                 center: {
-                    lat: 46.619261,
-                    lng: -33.134766
+                    lat: 59.510193,
+                    lng: 18.079796
                 }
             });
-        }
-    </script>
-    
-     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmiVwqgyfU8zvCqWDjXXR4JuQgu8iMV3w&callback=initMap"></script>
-     
-  
-    
+         
+            var labels = "ABCDEFGHIJKLMN";
+        
+            var locations = [
+                { lat: 59.44582231003377, lng: 18.076891005329326 },
+                { lat: 59.38170748995613, lng: 18.00050332615023 },
+                { lat: 59.328499476750714, lng: 18.063854858286685 },
+               ];
+        
+               var markers = locations.map(function(location, i) {
+                    return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+        });
+    });
+
+    var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
+}
+
+
+</script>
+
+ <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMBTjzSZKk-RzcOLZiZX9z_M1I8_8GIQU&callback=initMap"></script>
+ 
+
+
 </body>
 </html>
